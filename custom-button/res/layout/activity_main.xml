@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+	>
+    
+    
+    
+    <Button 
+        android:layout_width="match_parent"
+    	android:layout_height="40dip"
+    	android:layout_margin="20dip"
+    	android:text="按钮验收"
+        />
+    
+    <Button  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:padding="10dip"  
+        android:text="按下文字会变效果"  
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/btn_selector"  
+        />  
+    <Button  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:padding="10dip"   
+        android:text="按钮被禁用"  
+        android:enabled="false"  
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/btn_bg"  
+        /> 
+    <Button  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:padding="10dip"  
+        android:text="圆角按钮：文字颜色变化"   
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/shape"  
+        /> 
+    <Button
+        android:layout_marginTop="10dip"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:padding="10dip"  
+        android:text="圆角：按钮、文字都变化颜色" 
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/btn_colors_selector"  
+        /> 
+    <Button
+        android:layout_marginTop="10dip"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:padding="10dip" 
+        android:text="圆角：颜色" 
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/btn_colors_selector"  
+        /> 
+        
+    <Button
+        android:layout_marginTop="10dip"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content" 
+        android:padding="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" 
+        android:text="圆角按钮:上半边框"  
+        android:enabled="false"  
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/shape_bottom_corner_no_top_line"  
+        /> 
+    <Button
+        android:layout_marginTop="0dip"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"
+        android:padding="10dip" 
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" 
+        android:text="  圆角按钮:中边框  "  
+        android:enabled="false"  
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/shape_no_corner_without_bottom"  
+        /> 
+    <Button
+        android:layout_marginTop="0dip"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"  
+        android:text="圆角按钮:上半边框"  
+        android:enabled="false"  
+        android:textColor="@drawable/btn_color"  
+        android:background="@drawable/shape_top_corner_no_bottom_line"  
+        /> 
+    
+    
+    
+</LinearLayout>

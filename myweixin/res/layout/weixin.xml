@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content" 
+   	    android:gravity="center_vertical"
+   	    android:id="@+id/top">
+        <include layout="@layout/title"/>
+        
+        <ImageButton 
+        android:layout_width="65dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_marginRight="10dp"
+   	    android:layout_centerVertical="true"
+   	    android:background="@drawable/title_btn"
+   	    android:src="@drawable/title_btn_function"
+   	    android:onClick="rightTop"
+            />
+    </RelativeLayout>
+	
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg" 
+            android:layout_gravity="center">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/search_bar_icon_normal" 
+                android:background="@drawable/search_bar_edit_bg"
+                android:layout_gravity="center"
+                />
+    </FrameLayout>
+    
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/mm_listitem"
+            android:onClick="chat"
+             >
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+		        android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="2B"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:text="昨天 晚上"
+                android:textColor="#666" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:layout_alignParentBottom="true"
+                android:padding="7dp"
+                android:text="哥，问你个问题"
+                android:textColor="#666" />
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pager" />
+    
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/title_bar"
+        android:paddingTop="5dp"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/tab_bottom"
+        	android:layout_alignParentBottom="true"
+        	android:id="@+id/bottom_image"
+            />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal"
+        	android:id="@+id/tab_bar"
+            >
+            <TextView 
+                style="@style/TabItem"
+                android:drawableTop="@drawable/tab_weixin"
+                android:text="@string/weixin"
+                />
+            <TextView 
+                style="@style/TabItem"
+                android:drawableTop="@drawable/tab_address"
+                android:text="@string/address"
+                />
+            <TextView 
+                style="@style/TabItem"
+                android:drawableTop="@drawable/tab_find_frd"
+                android:text="@string/friends"
+                />
+            <TextView 
+                style="@style/TabItem"
+                android:drawableTop="@drawable/tab_settings"
+                android:text="@string/setting"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

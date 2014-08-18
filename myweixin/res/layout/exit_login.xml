@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"   
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"    
+    android:onClick="cancel"
+    >
+       <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:gravity="center_horizontal"
+        	android:orientation="vertical"
+        	android:background="@drawable/exit_dialog_bg"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="是否要退出？" />           
+            
+            <Button
+              android:id="@+id/exitBtn0"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="退出登录"
+              android:textSize="18sp"
+              android:textColor="#fff"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/btn_style_alert_dialog_special"
+              android:gravity="center"
+			  android:onClick="exit"
+              />
+
+            <Button
+                android:id="@+id/exitBtn1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_style_alert_dialog_cancel"
+                android:gravity="center"
+                android:onClick="cancel"
+                android:text="取消"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+       </LinearLayout>
+</RelativeLayout>
